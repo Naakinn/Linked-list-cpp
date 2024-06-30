@@ -7,6 +7,7 @@
 - Indexation and negative indexation
 ## Goals
 - Searching value in the list
+- All integral C++ types support
 ## Installation 
 
 ###  On Unix/Linux
