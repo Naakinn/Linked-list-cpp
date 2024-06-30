@@ -5,8 +5,11 @@
 - Adding elements to the start and to the end of the list
 - Removing first and last elements of the list
 - Indexation and negative indexation
-## Goals
 - Searching value in the list
+- Replacing single or all values in the list
+- Getting pointer to an element of the list
+
+## Goals
 - All integral C++ types support
 ## Installation 
 
