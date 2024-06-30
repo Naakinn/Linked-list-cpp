@@ -7,11 +7,5 @@ int main() {
     list.append_begin(45); 
     list.append_end(6); 
     list.display(); 
-    cout << list.length() << '\n'; 
-    cout << list.get(-1) << '\n'; 
-    cout << list.get(-2) << '\n'; 
-    cout << list.get(-3) << '\n'; 
-    cout << list.get(-4) << '\n';
-    cout << list.get(-10) << '\n'; 
     return 0;  
 }

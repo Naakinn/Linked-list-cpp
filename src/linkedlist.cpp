@@ -72,6 +72,41 @@ size_t linkedlist::length() {
     return length; 
 }
 int linkedlist::get(int index) {
+    return *(this->getptr(index)); 
+}
+int linkedlist::find(int value) {
+    node* tmp = start; 
+    int idx = 0; 
+    while(tmp != nullptr) {
+        if (tmp->val == value) return idx; 
+        idx++; 
+        tmp = tmp->next; 
+    }
+    return -1;    
+}
+
+void linkedlist::replace(int oldval, int newval) {
+    node* tmp = start; 
+    while (tmp != nullptr) {
+        if (tmp->val == oldval) {
+            tmp->val = newval;
+            break; 
+        }  
+        tmp = tmp->next; 
+    }
+}
+
+void linkedlist::replace_all(int oldval, int newval) {
+    node* tmp = start; 
+    while (tmp != nullptr) {
+        if (tmp->val == oldval) {
+            tmp->val = newval; 
+        }
+        tmp = tmp->next; 
+    }
+}
+
+int* linkedlist::getptr(int index) {
     if (index < 0) index = this->length() + index; 
     int iter = 0; 
     node* tmp = start;
@@ -89,7 +124,6 @@ int linkedlist::get(int index) {
         tmp = tmp->next; 
         iter++; 
     } 
-    return tmp->val; 
+    return &(tmp->val);
 }
-
 

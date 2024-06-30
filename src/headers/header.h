@@ -25,5 +25,9 @@ class linkedlist {
         void pop_end(); 
         void display(); 
         int get(int);
+        int find(int);
+        void replace(int, int); 
+        void replace_all(int, int); 
+        int* getptr(int);  
 }; 
 #endif
