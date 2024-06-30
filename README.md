@@ -22,5 +22,7 @@ git clone https://github.com/Naakinn/Linked-list-cpp
 ```
 #### 2. Run run.sh file
 ```
+mkdir bin
+mkdir bin/obj
 ./run.sh
 ```
