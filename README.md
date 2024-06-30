@@ -11,6 +11,8 @@
 
 ## Goals
 - All integral C++ types support
+- Inserting value on custom position
+- Merging two or more lists
 ## Installation 
 
 ###  On Unix/Linux
