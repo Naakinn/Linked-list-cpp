@@ -1,5 +1,6 @@
 # Linked-list-cpp
-
+## Dependencies
+- GCC Compiler
 ## Features
 - Adding elements to the start and to the end of the list
 - Removing first and last elements of the list
@@ -7,6 +8,7 @@
 ## Goals
 - Searching value in the list
 ## Installation 
+
 ###  On Unix/Linux
 #### 1. Clone the repo 
 ```
