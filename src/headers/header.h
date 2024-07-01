@@ -15,6 +15,7 @@ class linkedlist {
     private:
         node* start; 
         node* end;
+        void throw_exeption(const char*); 
     public:
         linkedlist(); 
         bool is_empty();  
@@ -28,6 +29,7 @@ class linkedlist {
         int find(int);
         void replace(int, int); 
         void replace_all(int, int); 
-        int* getptr(int);  
+        int* getptr(int); 
+        void insert(int, int);  
 }; 
 #endif

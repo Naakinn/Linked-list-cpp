@@ -112,18 +112,32 @@ int* linkedlist::getptr(int index) {
     node* tmp = start;
     while (iter != index) {
         
-        if (tmp == nullptr) {
-            try {
-                throw "List index out of range";  
-            }
-            catch (const char* err) {
-                cout << err << '\n';
-                terminate();
-            }
-        }
+        if (tmp == nullptr) throw_exeption("List index in out of range"); 
         tmp = tmp->next; 
         iter++; 
     } 
     return &(tmp->val);
+}
+void linkedlist::insert(int index, int value) {
+    if (index < 0) index = this->length() + index;
+    if (index == 0) {
+        this->append_begin(value); 
+        return; 
+    }
+    int shf = index - 1; 
+    int iter = 0; 
+    node* tmp = start; 
+    while (iter != shf) {
+        if (tmp == nullptr) this->throw_exeption("List index is out of range"); 
+        tmp = tmp->next; 
+        iter++; 
+    }
+    node* ptr = new node{value, tmp->next};
+    tmp->next = ptr; 
+}
+void linkedlist::throw_exeption(const char* err_msg) {
+    cout << err_msg << '\n'; 
+    terminate();
+
 }
 
