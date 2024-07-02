@@ -10,8 +10,7 @@
 - Getting pointer to an element of the list
 
 ## Goals
-- All integral C++ types support
-- Inserting value on custom position
+- Integral and other types support
 - Merging two or more lists
 ## Installation 
 
