@@ -1,4 +1,4 @@
-#include "headers/header.h"
+#include "header.h"
 
 int main() {
     linkedlist list;

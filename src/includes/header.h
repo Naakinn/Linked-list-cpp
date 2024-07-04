@@ -1,8 +1,6 @@
-#ifndef HEADER
-#define HEADER
-
-#include <iostream>
-using namespace std;
+#ifndef CSTDDEF_H
+#include <cstddef>
+#endif
 
 class node {
     public:
@@ -19,8 +17,8 @@ class linkedlist {
     public:
         linkedlist(); 
         bool is_empty();  
-        size_t length();  
-        void append_begin(int);
+        std::size_t length();  
+       void append_begin(int);
         void append_end(int); 
         void pop_begin(); 
         void pop_end(); 
@@ -32,4 +30,3 @@ class linkedlist {
         int* getptr(int); 
         void insert(int, int);  
 }; 
-#endif

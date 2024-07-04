@@ -1,6 +1,7 @@
-#include "headers/header.h"
-
-
+#include <iostream>
+#define CSTDDEF_H
+#include "header.h"
+ 
 node::node(int value, node* next_elem) {
     val = value; 
     next = next_elem; 
@@ -57,10 +58,10 @@ void linkedlist::pop_end() {
 void linkedlist::display() {
     node* tmp = start; 
     while(tmp != nullptr) {
-        cout << tmp->val << ' ';  
+        std::cout << tmp->val << ' ';  
         tmp = tmp->next; 
     }
-    cout << '\n'; 
+    std::cout << '\n'; 
 }
 size_t linkedlist::length() {
     node* tmp = start;
@@ -69,6 +70,7 @@ size_t linkedlist::length() {
         length++; 
         tmp = tmp->next; 
     }
+
     return length; 
 }
 int linkedlist::get(int index) {
@@ -136,8 +138,8 @@ void linkedlist::insert(int index, int value) {
     tmp->next = ptr; 
 }
 void linkedlist::throw_exeption(const char* err_msg) {
-    cout << err_msg << '\n'; 
-    terminate();
+    std::cout << err_msg << '\n'; 
+    std::terminate();
 
 }
 

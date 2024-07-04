@@ -1,6 +1,7 @@
 # Linked-list-cpp
 ## Dependencies
 - GCC Compiler
+
 ## Features
 - Adding elements to the start and to the end of the list
 - Removing first and last elements of the list
@@ -8,10 +9,11 @@
 - Searching value in the list
 - Replacing single or all values in the list
 - Getting pointer to an element of the list
-
+- Inserting value on custom position
+- Self-written build system(I'll use cmake soon)
+    
 ## Goals
 - All integral C++ types support
-- Inserting value on custom position
 - Merging two or more lists
 ## Installation 
 
@@ -22,7 +24,5 @@ git clone https://github.com/Naakinn/Linked-list-cpp
 ```
 #### 2. Run run.sh file
 ```
-mkdir bin
-mkdir bin/obj
 ./run.sh
 ```
