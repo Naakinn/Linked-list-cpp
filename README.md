@@ -10,8 +10,8 @@
 - Getting pointer to an element of the list
 
 ## Goals
-- Integral and other types support
-- Merging two or more lists
+- Other C++ fundamental types support
+- Merging lists
 ## Installation 
 
 ###  On Unix/Linux
