@@ -7,7 +7,7 @@ node::node(int value, node* next_elem) {
     next = next_elem; 
 }
  
-linkedlist::linkedlist(): start{nullptr}, end{nullptr} {}
+linkedlist::linkedlist(): start{ nullptr }, end{ nullptr } {}
 
 bool linkedlist::is_empty() { return start == nullptr; }
 
@@ -126,11 +126,11 @@ void linkedlist::insert(int index, int value) {
         this->append_begin(value); 
         return; 
     }
-    int shf = index - 1; 
+	index--; 
     int iter = 0; 
     node* tmp = start; 
-    while (iter != shf) {
-        if (tmp == nullptr) this->throw_exeption("List index is out of range"); 
+    while (iter != index) {
+        if (tmp == end) this->throw_exeption("List index is out of range"); 
         tmp = tmp->next; 
         iter++; 
     }
@@ -141,5 +141,23 @@ void linkedlist::throw_exeption(const char* err_msg) {
     std::cout << err_msg << '\n'; 
     std::terminate();
 
+}
+void linkedlist::merge(linkedlist& list, int index) {
+	if (index < 0) index = this->length() + index;
+	if (index == 0) {
+		list.end->next = start; 
+		start = list.start; 
+		return; 
+	}
+	int iter{}; 
+	index--; 
+	node* tmp =  start; 
+	while (iter != index) {
+		if (tmp == end) this->throw_exeption("List index is out of range"); 
+		tmp = tmp->next;
+		iter++; 
+	}
+	list.end->next = tmp->next; 
+	tmp->next = list.start; 
 }
 

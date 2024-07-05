@@ -8,10 +8,12 @@
 - Searching value in the list
 - Replacing single or all values in the list
 - Getting pointer to an element of the list
+- Merging lists
 
 ## Goals
+- Build system(CMake)
+- Tests
 - Other C++ fundamental types support
-- Merging lists
 ## Installation 
 
 ###  On Unix/Linux
