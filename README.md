@@ -1,19 +1,21 @@
 # Linked-list-cpp
 ## Dependencies
 - GCC Compiler
+- CMake
 ## Features
 - Adding elements to the start and to the end of the list
 - Removing first and last elements of the list
 - Indexation and negative indexation
 - Searching value in the list
-- Replacing single or all values in the list
+- Inserting element on an index
+- Replacing single value or all values in the list
 - Getting pointer to an element of the list
-- Merging lists
+- Merging lists 
+- Build system(CMake)
 
 ## Goals
-- Build system(CMake)
+- Other C++ types support(e.g. fundamental
 - Tests
-- Other C++ fundamental types support
 ## Installation 
 
 ###  On Unix/Linux
@@ -21,8 +23,9 @@
 ```
 git clone https://github.com/Naakinn/Linked-list-cpp
 ```
-#### 2. Run run.sh file
+#### 2. Build with CMake
 ```
 cd Linked-list-cpp
-./run.sh
+cmake -B build
+cmake --build build
 ```

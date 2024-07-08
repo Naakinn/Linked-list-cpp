@@ -9,15 +9,5 @@ int main() {
     list1.append_begin(45); 
     list1.append_end(6); 
     list1.display(); 
-
-	linkedlist list2{}; 
-	list2.append_begin(1); 
-	list2.append_begin(1); 
-	list2.append_begin(1);
-    list2.append_begin(1); 	
-	list2.append_begin(1);
-
-	list1.insert(4, 56565); 
-	list1.display();
     return 0;  
 }
