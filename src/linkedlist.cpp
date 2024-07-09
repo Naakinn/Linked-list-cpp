@@ -65,7 +65,7 @@ void linkedlist::display() {
 }
 size_t linkedlist::length() {
     node* tmp = start;
-    size_t length = 0;  
+    size_t length{};  
     while(tmp != nullptr) {
         length++; 
         tmp = tmp->next; 
@@ -78,7 +78,7 @@ int linkedlist::get(int index) {
 }
 int linkedlist::find(int value) {
     node* tmp = start; 
-    int idx = 0; 
+    int idx{}; 
     while(tmp != nullptr) {
         if (tmp->val == value) return idx; 
         idx++; 
@@ -110,7 +110,7 @@ void linkedlist::replace_all(int oldval, int newval) {
 
 int* linkedlist::getptr(int index) {
     if (index < 0) index = this->length() + index; 
-    int iter = 0; 
+    int iter{}; 
     node* tmp = start;
     while (iter != index) {
         
@@ -127,7 +127,7 @@ void linkedlist::insert(int index, int value) {
         return; 
     }
 	index--; 
-    int iter = 0; 
+    int iter{}; 
     node* tmp = start; 
     while (iter != index) {
         if (tmp == end) this->throw_exeption("List index is out of range"); 
