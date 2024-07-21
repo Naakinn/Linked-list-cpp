@@ -10,8 +10,8 @@ int main() {
     list1.append_begin(45); 
     list1.append_end(6); 
     list1.display(); 
-	 
 	// Your code here
+	list1.free(); 
 	
     return 0;  
 }

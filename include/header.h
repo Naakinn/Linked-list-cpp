@@ -30,4 +30,5 @@ class linkedlist {
         int* getptr(int); 
         void insert(int, int);
 	  	void merge(linkedlist&, int);
+		void free(); 
 }; 

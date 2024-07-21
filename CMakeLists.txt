@@ -9,7 +9,9 @@ set(SRC
 	${PROJECT_SOURCE_DIR}/src/main.cpp 
 	${PROJECT_SOURCE_DIR}/src/linkedlist.cpp
 	)
-
+ 
+add_compile_options(-ggdb)
+ 
 add_executable(${PROJECT_NAME} ${SRC})
  
-target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/includes)
+target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/include)

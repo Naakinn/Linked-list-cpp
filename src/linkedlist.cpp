@@ -161,3 +161,11 @@ void linkedlist::merge(linkedlist& list, int index) {
 	tmp->next = list.start; 
 }
 
+void linkedlist::free() { 
+	node* tmp = start; 
+	while(tmp != nullptr) {
+		node* next = tmp->next; 
+		delete tmp; 
+		tmp = next; 
+	}
+}
