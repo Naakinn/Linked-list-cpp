@@ -16,9 +16,9 @@
 ## Goals
 - Other C++ types support(e.g. fundamental
 - Tests
-## Installation 
+## Build from source
 
-###  On Unix/Linux
+###  On MacOS/Linux
 #### 1. Clone the repo 
 ```
 git clone https://github.com/Naakinn/Linked-list-cpp
